@@ -1,19 +1,20 @@
 import Link from "next/link";
+
 const Navbar = () => {
   return (
-    <div>
+    <nav>
       <Link href="/">
-        <a>Home</a>
+        <a className="hover:shadow">Home</a>
       </Link>
 
       <Link href="/about">
-        <a>About</a>
+        <a className="hover:shadow">About</a>
       </Link>
 
       <Link href="/country">
-        <a>Country~List</a>
+        <a className="hover:shadow">Country~List</a>
       </Link>
-    </div>
+    </nav>
   );
 };
 

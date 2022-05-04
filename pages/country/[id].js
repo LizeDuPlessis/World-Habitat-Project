@@ -1,4 +1,5 @@
 import CapitalCityWeather from "../../Components/CapitalCityWeather";
+import CountryDetails from "../../Components/CountryDetails";
 import { useState, useEffect } from "react";
 
 export const getStaticPaths = async () => {
@@ -43,7 +44,12 @@ const Details = ({ country }) => {
   }, []);
   return (
     <div>
-      <CapitalCityWeather capitalCityWeather={capitalCityWeather} />
+      <CountryDetails country={country} />
+
+      <CapitalCityWeather
+        capitalCityWeather={capitalCityWeather}
+        country={country}
+      />
     </div>
   );
 };
