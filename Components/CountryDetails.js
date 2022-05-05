@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import ShowMoreBtn from "./ShowMoreBtn";
 
@@ -5,7 +6,7 @@ const CountryDetails = ({ country }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
       <div>
-        <Link href="/Country">
+        <Link href="/country">
           <a>
             <button className="my-2 mx-1 text-white text-left font-bold py-2 px-4 rounded bg-teal-500 hover:bg-teal-600 ">
               Back
