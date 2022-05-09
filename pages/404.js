@@ -8,6 +8,8 @@ const NotFound = () => {
     setTimeout(() => {
       router.push("/");
     }, 3000);
+
+    console.log("redirect page to home");
   }, []);
   return (
     <div>

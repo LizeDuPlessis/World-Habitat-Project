@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import ShowMoreBtn from "./ShowMoreBtn";
 
@@ -28,15 +27,7 @@ const CountryDetails = ({ country }) => {
           <span className="text-lg font-bold">Continent: </span>
           {country[0].continents}
         </p>
-        <div>
-          Languages
-          <ul>
-            {country[0].languages &&
-              country?.languages?.map((language) => (
-                <li key={language.id}>{language.id}</li>
-              ))}
-          </ul>
-        </div>
+
         <ShowMoreBtn country={country} />
       </div>
     </div>
